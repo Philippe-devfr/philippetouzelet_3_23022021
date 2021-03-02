@@ -13,9 +13,13 @@ a {
   color: black;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 header h2 {
   font-family: Shrikhand, sans-serif;
-  font-weight: bold;
+  font-size: 180%;
   text-align: center;
   margin: 10px 0;
 }
@@ -35,7 +39,7 @@ header h2 {
 .about {
   background: #f6f6f6;
   text-align: center;
-  padding: 40px 30px;
+  padding: 40px 44px;
 }
 .about h1 {
   font-weight: bold;
@@ -53,11 +57,12 @@ header h2 {
   color: #fff;
   box-shadow: 0px 6px 10px #c7c7c7;
   border-radius: 30px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   font-weight: bold;
 }
 .about__btn:hover {
   background: linear-gradient(#FF79DA, #9356DC);
+  opacity: 0.9;
   box-shadow: 0px 6px 10px #4e4e4e;
 }
 
@@ -106,10 +111,14 @@ header h2 {
   line-height: 1.5;
 }
 
+.heart {
+  font-weight: normal;
+}
+
 .footer {
   background-color: #353535;
   color: white;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-left: 1rem;
 }
@@ -117,11 +126,12 @@ header h2 {
 .footer__title {
   font-family: Shrikhand, sans-serif;
   padding-bottom: 1rem;
+  font-size: 120%;
 }
 
 .footer__nav a {
   color: white;
-  line-height: 1.5;
+  line-height: 2rem;
 }
 
 .footer__nav i {

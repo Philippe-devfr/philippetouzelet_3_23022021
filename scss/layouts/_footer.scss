@@ -1,7 +1,7 @@
 .footer {
     background-color: #353535;
     color: white;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 1rem;
 }
@@ -9,11 +9,12 @@
 .footer__title {
     font-family: Shrikhand, sans-serif;
     padding-bottom: 1rem;
+    font-size: 120%;
 }
 
 .footer__nav a {
     color: white;
-    line-height: 1.5;
+    line-height: 2rem;
 }
 
 .footer__nav i {
