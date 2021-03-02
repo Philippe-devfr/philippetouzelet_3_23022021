@@ -4,4 +4,137 @@
   padding: 0;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header h2 {
+  font-family: Shrikhand, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.city {
+  background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 20px 0;
+}
+.city__icon {
+  padding-right: 10px;
+}
+
+.about {
+  background: #f6f6f6;
+  text-align: center;
+  padding: 40px 30px;
+}
+.about h1 {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.about p {
+  color: #717171;
+  padding-bottom: 2rem;
+}
+
+.about__btn {
+  cursor: pointer;
+  border: 0px solid transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #fff;
+  box-shadow: 0px 6px 10px #c7c7c7;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+.about__btn:hover {
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0px 6px 10px #4e4e4e;
+}
+
+.restaurants {
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+.restaurants__title {
+  padding: 2rem 0 0 1rem;
+}
+
+.card {
+  border-radius: 25px;
+  box-shadow: 0px 6px 10px #c7c7c7;
+  margin: 1rem;
+  position: relative;
+  background: #fff;
+}
+.card__new {
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 5px 12px;
+  border-radius: 2px;
+  position: absolute;
+  top: 7%;
+  right: 5%;
+}
+
+.card img {
+  object-fit: cover;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  max-height: 180px;
+}
+
+.card__legend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 3px 4px lightgrey;
+  border-radius: 0 0 25px 25px;
+  padding: 10px 20px 10px 15px;
+  line-height: 1.5;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+
+.footer__title {
+  font-family: Shrikhand, sans-serif;
+  padding-bottom: 1rem;
+}
+
+.footer__nav a {
+  color: white;
+  line-height: 1.5;
+}
+
+.footer__nav i {
+  margin-right: 10px;
+  width: 15px;
+}
+
+.fa-utensils {
+  font-size: medium;
+}
+
+.fa-hands-helping {
+  font-size: small;
+}
+
 /*# sourceMappingURL=style.css.map */

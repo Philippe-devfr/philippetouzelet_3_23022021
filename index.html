@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/b9a801357f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -19,29 +20,29 @@
 
 
 <header>
-    <img src="img/logo/ohmyfood.png" alt="logo ohmyfood">
+    <h2>ohmyfood</h2>
 </header> 
 
 <!-- CITY -->
 
 <main>
-<section>
-    <i class="fas fa-map-marker-alt"></i>
+<section class="city">
+    <i class="city__icon fas fa-map-marker-alt"></i>
     <span>Paris, Belleville</span>
 </section>
 
 <!-- ABOUT -->
 
-<section>
+<section class="about">
     <h1>Réservez le menu qui vous convient</h1>
     <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-    <button>Explorez nos restaurants</button>
+    <button class="about__btn">Explorez nos restaurants</button>
 </section>
 
 <!-- OPERATION -->
 
 <section>
-    <div>
+    <div class="operation__title">
         <h2>Fonctionnement</h2>
     </div>
 
@@ -66,60 +67,68 @@
 
 <!-- RESTAURANTS -->
 
-<section class="Restaurants">
+<section class="restaurants">
     <div class="restaurants__title">
         <h2>Restaurants</h2>
     </div>
 
-    <a href="la-palette-du-gout.html">
+    <a class="card" href="la-palette-du-gout.html">
         <figure>
             <img src="img/restaurants/la_palette_du_gout.jpg" alt="restaurant la palette du gout">
-            <span>Nouveau</span>
-                <figcaption>
-                    <h3>La palette du goût</h3>
-                        <p>Ménilmontant</p>
+            <span class="card__new">Nouveau</span>
+                <figcaption class="card__legend">
                     <div>
-                        <i class="far fa-heart"></i>
+                        <h3>La palette du goût</h3>
+                        <p>Ménilmontant</p>
+                    </div>
+                    <div>
+                        <i class="heart far fa-heart fa-2x"></i>
                     </div>
                 </figcaption>
         </figure>
     </a>
 
-    <a href="">
+    <a class="card" href="">
         <figure>
             <img src="img/restaurants/la_note_enchantee.jpg" alt="restaurant la note enchantee">
-            <span>Nouveau</span>
-                <figcaption>
-                    <h3>La note enchantée</h3>
-                    <p>Charonne</p>
+            <span class="card__new">Nouveau</span>
+                <figcaption class="card__legend">
                     <div>
-                        <i class="far fa-heart"></i>
+                        <h3>La note enchantée</h3>
+                        <p>Charonne</p>
+                    </div>
+                    <div>
+                        <i class="far fa-heart fa-2x"></i>
                     </div>
             </figcaption>
         </figure>
     </a>
         
-    <a href="">
+    <a class="card" href="">
         <figure>
             <img src="img/restaurants/a_la_francaise.jpg" alt="restaurant a la francaise">
-                <figcaption>
-                    <h3>A la française</h3>
-                    <p>Cité Rouge</p>
-                    <div class="">
-                        <i class="far fa-heart"></i>
+                <figcaption class="card__legend">
+                    <div>
+                        <h3>A la française</h3>
+                        <p>Cité Rouge</p>
+                    </div>
+                    <div>
+                        <i class="far fa-heart fa-2x"></i>
                     </div>
                 </figcaption>
         </figure>
     </a>
 
-    <a href="">
+    <a class="card" href="">
         <figure>
             <img src="img/restaurants/le_delice_des_sens.jpg" alt="restaurant le delice des sens">
-                <figcaption>
-                    <h3>Le délice des sens</h3>
-                    <p>Folie-Méricourt</p>
+                <figcaption class="card__legend">
                     <div>
-                        <i class="far fa-heart"></i>
+                        <h3>Le délice des sens</h3>
+                        <p>Folie-Méricourt</p>
+                    </div>
+                    <div>
+                        <i class="far fa-heart fa-2x"></i>
                     </div>
                 </figcaption>
         </figure>
@@ -129,10 +138,8 @@
 
 <!-- <FOOTER> -->
 
-<footer>
-    <div class="footer__title">
-        <img src="img/logo/ohmyfood.png" alt="logo ohmyfood">
-    </div>
+<footer class="footer">
+    <div class="footer__title">ohmyfood</div>
     <div class="footer__nav">
         <ul>
             <li>

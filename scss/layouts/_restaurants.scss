@@ -1,0 +1,32 @@
+.restaurants {
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    &__title {
+    padding: 2rem 0 0 1rem;
+    }
+}
+
+.card {
+    @include card;
+    &__new {
+        background-color: $color-tertiary;
+        color: rgb(0,135,102);
+        padding: 5px 12px;
+        border-radius: 2px;
+        position: absolute;
+        top: 7%;
+        right: 5%;
+    }
+}
+
+.card img {
+    @include card-img ;
+}
+
+.card__legend {
+    @include card-figcaption;
+}
+
+
