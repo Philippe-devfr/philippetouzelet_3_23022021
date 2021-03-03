@@ -24,6 +24,49 @@ header h2 {
   margin: 10px 0;
 }
 
+.footer {
+  background-color: #353535;
+  color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+
+.footer__title {
+  font-family: Shrikhand, sans-serif;
+  padding-bottom: 1rem;
+  font-size: 120%;
+}
+
+.footer__nav a {
+  color: white;
+  line-height: 2rem;
+}
+
+.footer__nav i {
+  margin-right: 10px;
+  width: 15px;
+}
+
+.fa-utensils {
+  font-size: medium;
+}
+
+.fa-hands-helping {
+  font-size: small;
+}
+
+.orderButton {
+  cursor: pointer;
+  border: 0px solid transparent;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #fff;
+  box-shadow: 0px 6px 10px #c7c7c7;
+  border-radius: 30px;
+  padding: 15px 20px;
+  font-weight: bold;
+}
+
 .city {
   background: #eaeaea;
   display: flex;
@@ -70,7 +113,7 @@ header h2 {
   padding: 2rem 0 1rem 1rem;
 }
 
-.operation {
+.operation__step {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -82,7 +125,7 @@ header h2 {
   padding: 1.5rem 0rem;
   margin: 0.5rem 1rem 1.5rem 2rem;
 }
-.operation__number {
+.operation__step__number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,8 +137,15 @@ header h2 {
   height: 25px;
   border-radius: 100px;
 }
+.operation__step__number:hover {
+  background-color: #f5edff;
+}
 
-.operation p {
+.operation__step i {
+  color: #7e7e7e;
+}
+
+.operation__step p {
   margin-left: 30px;
 }
 
@@ -146,49 +196,6 @@ header h2 {
 
 .heart {
   font-weight: normal;
-}
-
-.footer {
-  background-color: #353535;
-  color: white;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  padding-left: 1rem;
-}
-
-.footer__title {
-  font-family: Shrikhand, sans-serif;
-  padding-bottom: 1rem;
-  font-size: 120%;
-}
-
-.footer__nav a {
-  color: white;
-  line-height: 2rem;
-}
-
-.footer__nav i {
-  margin-right: 10px;
-  width: 15px;
-}
-
-.fa-utensils {
-  font-size: medium;
-}
-
-.fa-hands-helping {
-  font-size: small;
-}
-
-.orderButton {
-  cursor: pointer;
-  border: 0px solid transparent;
-  background: linear-gradient(#FF79DA, #9356DC);
-  color: #fff;
-  box-shadow: 0px 6px 10px #c7c7c7;
-  border-radius: 30px;
-  padding: 15px 20px;
-  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
