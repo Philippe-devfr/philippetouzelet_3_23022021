@@ -15,6 +15,19 @@
     font-weight: bold;
    }
 
+@mixin number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-primary;
+    color: white;
+    position: relative;
+    right: 18px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+}
+
 @mixin card {
     border-radius: 25px;
     box-shadow: 0px 6px 10px rgb(199, 199, 199);
