@@ -169,7 +169,7 @@ header h2 {
 }
 
 .header__nav a {
-  position: fixed;
+  position: absolute;
   top: 22px;
   left: 1.5rem;
 }
