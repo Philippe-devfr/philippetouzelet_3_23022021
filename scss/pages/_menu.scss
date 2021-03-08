@@ -1,3 +1,9 @@
+.header__nav a {
+    position: fixed;
+    top: 22px;
+    left: 1.5rem;
+}
+
 .header__img img {
     object-fit: cover;
     height: 275px;
@@ -15,8 +21,8 @@
 
 .menu__title {
     font-family: Shrikhand, sans-serif;
-    font-size: 80%;
-    padding: 2rem 0 2rem 1rem;
+    font-size: 90%;
+    padding: 2rem 0 0 1.5rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -44,8 +50,20 @@
 
 .dish p {
     flex: 1;
+    font-weight: 300;
+}
+
+.dish span {
+    font-weight: bold;
 }
 
 .starter__title, .mainCourses__title, .dessert__title {
     @include title;
+    h2 {
+        font-weight: 300;
+        padding-top: 2rem;
+        padding-bottom: 6px;
+        border-bottom: 3px solid $color-tertiary;
+        width: 40px;
+    }
 }

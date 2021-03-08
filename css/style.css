@@ -19,7 +19,7 @@ body {
 
 header h2 {
   font-family: Shrikhand, sans-serif;
-  font-size: 180%;
+  font-size: 200%;
   text-align: center;
   margin: 10px 0;
 }
@@ -168,8 +168,10 @@ header h2 {
   line-height: 1.5;
 }
 
-.heart {
-  font-weight: normal;
+.header__nav a {
+  position: fixed;
+  top: 22px;
+  left: 1.5rem;
 }
 
 .header__img img {
@@ -189,8 +191,8 @@ header h2 {
 
 .menu__title {
   font-family: Shrikhand, sans-serif;
-  font-size: 80%;
-  padding: 2rem 0 2rem 1rem;
+  font-size: 90%;
+  padding: 2rem 0 0 1.5rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -223,11 +225,24 @@ header h2 {
 
 .dish p {
   flex: 1;
+  font-weight: 300;
+}
+
+.dish span {
+  font-weight: bold;
 }
 
 .starter__title, .mainCourses__title, .dessert__title {
-  padding-left: 1rem;
+  padding-left: 1.5rem;
   text-transform: uppercase;
+  font-size: 70%;
+}
+.starter__title h2, .mainCourses__title h2, .dessert__title h2 {
+  font-weight: 300;
+  padding-top: 2rem;
+  padding-bottom: 6px;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
 }
 
 .about__btn {
