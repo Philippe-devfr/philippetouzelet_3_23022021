@@ -4,7 +4,7 @@
     padding: 40px 44px;
 }
 
-@mixin btn-about {
+@mixin btn {
     cursor: pointer;
     border: 0px solid transparent;
     background: linear-gradient($color-secondary, $color-primary);;
@@ -13,6 +13,11 @@
     border-radius: 30px;
     padding: 15px 20px;
     font-weight: bold;
+    &:hover {
+        background: linear-gradient($color-secondary, $color-primary);
+        opacity: 0.9;
+        box-shadow: 0px 6px 10px rgb(78, 78, 78);
+    }
    }
 
 @mixin number {
@@ -29,17 +34,18 @@
 }
 
 @mixin card {
-    border-radius: 25px;
+    border-radius: 15px;
     box-shadow: 0px 6px 10px rgb(199, 199, 199);
     margin: 1rem;
     position: relative;
     background: #fff;
+    cursor: pointer;
 }
 
 @mixin card-img {
     object-fit: cover;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     width: 100%;
     max-height: 180px;
     }
@@ -49,7 +55,12 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 3px 4px lightgrey;
-    border-radius: 0 0 25px 25px;
+    border-radius: 0 0 15px 15px;
     padding: 10px 20px 10px 15px;
     line-height: 1.5;
+}
+
+@mixin title {
+    padding-left: 1rem;
+    text-transform: uppercase;
 }

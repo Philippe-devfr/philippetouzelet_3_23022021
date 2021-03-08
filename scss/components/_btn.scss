@@ -1,8 +1,10 @@
-.btn {
-    @include btn-about;
-    &:hover {
-        background: linear-gradient($color-secondary, $color-primary);
-        opacity: 0.9;
-        box-shadow: 0px 6px 10px rgb(78, 78, 78);
-    }
+.about__btn {
+    @include btn;
+}
+
+.orderBtn {
+    @include btn;
+    padding: 15px 60px;
+    display: block;
+    margin: 3rem auto 3.5rem auto;
 }

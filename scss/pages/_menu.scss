@@ -1,0 +1,51 @@
+.header__img img {
+    object-fit: cover;
+    height: 275px;
+    width: 100%;
+}
+
+.menu {
+    background-color: #f6f6f6;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 100%;
+    position: relative;
+    margin-top: -50px;
+}
+
+.menu__title {
+    font-family: Shrikhand, sans-serif;
+    font-size: 80%;
+    padding: 2rem 0 2rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu__title i {
+    padding-left: 1.5rem;
+}
+
+.dish {
+    @include card;
+    padding: 10px;
+}
+
+.dish {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.dish h3 {
+    flex: 0 0 100%;
+    padding-bottom: 10px;
+}
+
+.dish p {
+    flex: 1;
+}
+
+.starter__title, .mainCourses__title, .dessert__title {
+    @include title;
+}
