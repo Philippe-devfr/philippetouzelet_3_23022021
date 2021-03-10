@@ -1,10 +1,21 @@
 .about__btn {
     @include btn;
+    @include for-desktop {
+        font-size: 120%;
+    }
 }
 
 .orderBtn {
     @include btn;
     padding: 15px 60px;
     display: block;
-    margin: 3rem auto 3.5rem auto;
+    margin: 3rem auto 0rem auto;
+    @include for-desktop {
+        flex-basis: 100%;
+        margin-left: 36%;
+        margin-right: 36%;
+        padding-top: 26px;
+        padding-bottom: 26px;
+        font-size: 120%;
+    }
 }
