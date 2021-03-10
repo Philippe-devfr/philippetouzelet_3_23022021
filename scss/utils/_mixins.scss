@@ -6,7 +6,7 @@
 
 @mixin btn {
     cursor: pointer;
-    border: 0px solid transparent;
+    border: none;
     background: linear-gradient($color-secondary, $color-primary);;
     color: #fff;
     box-shadow: 0px 6px 10px rgb(199, 199, 199);
@@ -14,7 +14,6 @@
     padding: 15px 20px;
     font-weight: bold;
     &:hover {
-        background: linear-gradient($color-secondary, $color-primary);
         opacity: 0.9;
         box-shadow: 0px 6px 10px rgb(78, 78, 78);
     }

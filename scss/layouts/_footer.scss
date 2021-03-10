@@ -4,22 +4,19 @@
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 1rem;
-}
-
-.footer__title {
-    font-family: Shrikhand, sans-serif;
-    padding-bottom: 1rem;
-    font-size: 120%;
-}
-
-.footer__nav a {
-    color: white;
-    line-height: 2rem;
-}
-
-.footer__nav i {
-    margin-right: 10px;
-    width: 15px;
+    &__title {
+        font-family: Shrikhand, sans-serif;
+        padding-bottom: 1rem;
+        font-size: 120%;
+    }
+    &__nav a {
+        color: white;
+        line-height: 2rem;
+    }
+    &__nav i {
+        margin-right: 10px;
+        width: 15px;
+    }
 }
 
 .fa-utensils {
