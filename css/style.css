@@ -269,14 +269,18 @@ header h2 {
 .starter__title, .mainCourses__title, .dessert__title {
   padding-left: 1.5rem;
   text-transform: uppercase;
-  font-size: 70%;
+  padding-top: 2rem;
 }
 .starter__title h2, .mainCourses__title h2, .dessert__title h2 {
+  font-size: 1rem;
   font-weight: 300;
-  padding-top: 2rem;
-  padding-bottom: 6px;
+}
+.starter__title h2::after, .mainCourses__title h2::after, .dessert__title h2::after {
+  content: "";
+  display: block;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
+  padding-bottom: 6px;
 }
 
 @media screen and (min-width: 1240px) {

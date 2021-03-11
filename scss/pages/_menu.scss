@@ -59,13 +59,19 @@
 }
 
 .starter__title, .mainCourses__title, .dessert__title {
-    @include title;
-    h2 {
-        font-weight: 300;
-        padding-top: 2rem;
-        padding-bottom: 6px;
-        border-bottom: 3px solid $color-tertiary;
-        width: 40px;
+    padding-left: 1.5rem;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    & h2 {
+        font-size: 1rem;
+        font-weight: 300; 
+        &::after {
+            content: "";
+            display: block;
+            border-bottom: 3px solid $color-tertiary;
+            width: 40px;
+            padding-bottom: 6px; 
+        }
     }
 }
 
