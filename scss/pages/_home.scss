@@ -1,5 +1,5 @@
 .city {
-    background: #eaeaea;
+    background: $background-color-city;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@
         padding-bottom: 10px;
     }
     p {
-        color: #717171;
+        color: $font-color-secondary;
         padding-bottom: 2rem;
     }
 }
@@ -34,24 +34,25 @@
         padding: 3.5rem 0 0 1rem;
     }
     &__step {
+        @include box-shadow;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        background-color: #f6f6f6;
+        background: $background-color;
         border-radius: 25px;
-        box-shadow: 0px 6px 10px rgb(199, 199, 199);
         padding: 1.5rem 0rem;
         padding-right: 1.5rem;
         margin: 2rem 1rem 2rem 2rem;
         &:hover {
-            background-color: rgb(245, 237, 255);
+            background: $background-color-operation;
+            transition: .3s;
         }
         &__number {
             @include number;
         }
         & i {
-            color: #7e7e7e;
+            color: $font-color-secondary;
         }
         & p {
             margin-left: 30px;
@@ -60,7 +61,7 @@
 }
 
 .restaurants {
-    background: #f6f6f6;
+    background: $background-color;
     display: flex;
     flex-direction: column;
     padding-bottom: 2rem;
@@ -88,7 +89,7 @@
     }
     &__new {
         background-color: $color-tertiary;
-        color: rgb(0,135,102);
+        color: $font-color-new;
         padding: 5px 12px;
         border-radius: 2px;
         position: absolute;

@@ -1,6 +1,6 @@
 .footer {
-    background-color: #353535;
-    color: white;
+    background: $background-color-footer;
+    color: $font-color-primary;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     padding-left: 1rem;
@@ -10,7 +10,7 @@
         font-size: 120%;
     }
     &__nav a {
-        color: white;
+        color: $font-color-primary;
         line-height: 2rem;
     }
     &__nav i {
