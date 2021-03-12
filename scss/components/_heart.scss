@@ -1,0 +1,9 @@
+.fa-heart {
+    &:hover {
+        transition: .3s;
+        background: $color-btn;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+}
