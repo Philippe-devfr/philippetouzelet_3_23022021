@@ -28,6 +28,22 @@ body {
     opacity: 1;
   }
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 header h2 {
   font-family: Shrikhand, sans-serif;
   font-size: 200%;
@@ -206,6 +222,31 @@ header h2 {
   }
 }
 
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: radial-gradient(circle, #ff79da 0%, #9356dc 85%);
+  animation: loader 1s ease-in-out 3s forwards;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.loader__spinner {
+  border: 8px solid #FF79DA;
+  border-top: 8px solid #99E2D0;
+  border-bottom: 8px solid #99E2D0;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 50px;
+  animation-delay: 0.5s;
+}
+
 .header__nav a {
   position: absolute;
   top: 22px;
@@ -353,6 +394,7 @@ header h2 {
   position: absolute;
   background-color: #99E2D0;
   width: 0px;
+  height: 71px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   top: 0;
