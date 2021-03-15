@@ -109,6 +109,7 @@
     height: 100%;
     width: 100%;
     background: radial-gradient(circle, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 85%);
+    opacity: .98;
     animation: loader 1s ease-in-out 3s forwards;
     z-index: 1;
     display: flex;
@@ -117,14 +118,17 @@
     justify-content: center;
     pointer-events: none;
     &__spinner {
-    border: 8px solid $color-secondary;
-    border-top: 8px solid $color-tertiary;
-    border-bottom: 8px solid $color-tertiary;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-    margin: 50px;
-    animation-delay: .5s;
+        border: 8px solid $color-secondary;
+        border-top: 8px solid $color-tertiary;
+        border-bottom: 8px solid $color-tertiary;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        animation: spin 2s linear infinite;
+        animation-delay: .5s;
+    }
+    &__img {
+        animation: jump 4s infinite;
+        width: 250px;
     }
 }
