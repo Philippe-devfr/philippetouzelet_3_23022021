@@ -15,9 +15,6 @@ a {
 
 body {
   font-family: "Roboto", sans-serif;
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
 }
 
 @keyframes fade-in {
@@ -46,19 +43,19 @@ body {
 }
 @keyframes jump {
   0% {
-    transform: translate(0%, -50%) scale(1.25, 0.75);
+    -webkit-transform: translate(0%, -50%) scale(1.25, 0.75);
   }
   25% {
-    transform: translate(20%, -150%) scale(1, 1);
+    -webkit-transform: translate(20%, -150%) scale(1, 1);
   }
   50% {
-    transform: translate(0%, -50%) scale(1.25, 0.75);
+    -webkit-transform: translate(0%, -50%) scale(1.25, 0.75);
   }
   75% {
-    transform: translate(-20%, -150%) scale(1, 1);
+    -webkit-transform: translate(-20%, -150%) scale(1, 1);
   }
   100% {
-    transform: translate(0%, -50%) scale(1.25, 0.75);
+    -webkit-transform: translate(0%, -50%) scale(1.25, 0.75);
   }
 }
 header h2 {
@@ -240,6 +237,7 @@ header h2 {
 }
 
 .loader {
+  margin-top: -10px;
   position: fixed;
   height: 100%;
   width: 100%;
@@ -322,65 +320,43 @@ header h2 {
   cursor: pointer;
   box-shadow: 0px 6px 10px #c7c7c7;
   padding: 10px;
-}
-.dish--1 {
   animation: fade-in 2s ease-in-out;
   animation-fill-mode: backwards;
 }
 .dish--2 {
-  animation: fade-in 2s ease-in-out;
-  animation-fill-mode: backwards;
   animation-delay: 0.1s;
 }
 .dish--3 {
-  animation: fade-in 2s ease-in-out;
-  animation-fill-mode: backwards;
   animation-delay: 0.2s;
 }
 .dish--4 {
-  animation: fade-in 2s ease-in-out;
-  animation-fill-mode: backwards;
   animation-delay: 0.3s;
 }
 .dish--5 {
-  animation: fade-in 2s ease-in-out;
-  animation-fill-mode: backwards;
   animation-delay: 0.4s;
 }
 .dish--6 {
-  animation: fade-in 2s ease-in-out;
-  animation-fill-mode: backwards;
   animation-delay: 0.5s;
 }
 .dish--7 {
-  animation: fade-in 2s ease-in-out;
-  animation-fill-mode: backwards;
   animation-delay: 0.6s;
 }
 .dish--8 {
-  animation: fade-in 2s ease-in-out;
-  animation-fill-mode: backwards;
   animation-delay: 0.7s;
 }
 .dish--9 {
-  animation: fade-in 2s ease-in-out;
-  animation-fill-mode: backwards;
   animation-delay: 0.8s;
 }
 .dish--10 {
-  animation: fade-in 2s ease-in-out;
-  animation-fill-mode: backwards;
   animation-delay: 0.9s;
 }
 .dish h3 {
-  flex: 0 0 100%;
   padding-bottom: 10px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 .dish p {
-  flex: 1;
   font-weight: 300;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -412,7 +388,7 @@ header h2 {
   position: absolute;
   background-color: #99E2D0;
   width: 0px;
-  height: 71px;
+  height: auto;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   top: 0;

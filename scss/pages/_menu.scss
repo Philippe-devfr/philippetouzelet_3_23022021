@@ -43,54 +43,41 @@
 .dish {
     @include card;
     padding: 10px;
-    &--1 {
-        @include fade-in;
-    }
+    @include fade-in;
     &--2 {
-        @include fade-in;
         animation-delay: .1s; 
     }
     &--3 {
-        @include fade-in;
         animation-delay: .2s; 
     }
     &--4 {
-        @include fade-in;
         animation-delay: .3s; 
     }
     &--5 {
-        @include fade-in;
         animation-delay: .4s; 
     }
     &--6 {
-        @include fade-in;
         animation-delay: .5s;
     }
     &--7 {
-        @include fade-in;
         animation-delay: .6s; 
     }
     &--8 {
-        @include fade-in;
         animation-delay: .7s; 
     }
     &--9 {
-        @include fade-in;
         animation-delay: .8s; 
     }
     &--10 {
-        @include fade-in;
         animation-delay: .9s; 
     }
     & h3 {
-        flex: 0 0 100%;
         padding-bottom: 10px;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
     }
     & p {
-        flex: 1;
         font-weight: 300;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -123,7 +110,7 @@
     position: absolute;
     background-color: #99E2D0;
     width: 0px;
-    height: 71px;
+    height: auto;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     top: 0;
