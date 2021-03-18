@@ -262,6 +262,7 @@ header h2 {
   animation-delay: 0.5s;
 }
 .loader__img {
+  display: inline-block;
   animation: jump 4s infinite;
   width: 250px;
 }

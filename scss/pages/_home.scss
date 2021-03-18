@@ -129,6 +129,7 @@
         animation-delay: .5s;
     }
     &__img {
+        display: inline-block;
         animation: jump 4s infinite;
         width: 250px;
     }
