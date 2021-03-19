@@ -125,12 +125,14 @@
         border-radius: 50%;
         width: 80px;
         height: 80px;
-        animation: spin 2s linear infinite;
+        animation: spin 3.5s ease-in-out;
         animation-delay: .5s;
     }
     &__img {
-        display: inline-block;
-        animation: jump 4s infinite;
+        display: block;
+        margin-bottom: 2rem;
+        animation: jump 4s;
         width: 250px;
+        height: 50px;
     }
 }

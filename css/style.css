@@ -43,19 +43,19 @@ body {
 }
 @keyframes jump {
   0% {
-    -webkit-transform: translate(0%, -50%) scale(1.25, 0.75);
+    transform: translate(0, 0) scale(1.25, 0.75);
   }
   25% {
-    -webkit-transform: translate(20%, -150%) scale(1, 1);
+    transform: translate(50px, -50px) scale(1, 1);
   }
   50% {
-    -webkit-transform: translate(0%, -50%) scale(1.25, 0.75);
+    transform: translate(0, 0) scale(1.25, 0.75);
   }
   75% {
-    -webkit-transform: translate(-20%, -150%) scale(1, 1);
+    transform: translate(-50px, -50px) scale(1, 1);
   }
   100% {
-    -webkit-transform: translate(0%, -50%) scale(1.25, 0.75);
+    transform: translate(0, 0) scale(1.25, 0.75);
   }
 }
 header h2 {
@@ -258,13 +258,15 @@ header h2 {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  animation: spin 2s linear infinite;
+  animation: spin 3.5s ease-in-out;
   animation-delay: 0.5s;
 }
 .loader__img {
-  display: inline-block;
-  animation: jump 4s infinite;
+  display: block;
+  margin-bottom: 2rem;
+  animation: jump 4s;
   width: 250px;
+  height: 50px;
 }
 
 .header__nav a {
